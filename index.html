@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f3e9"><meta name="description" content="和小兔一起，把迷路的星星送回家。一本有声音的五页晚安绘本。">
+<title>小兔的月亮灯 · 晚安绘本</title>
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<svg class="symbols" aria-hidden="true"><defs>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M20.7 14.3A9 9 0 0 1 9.7 3.2a9 9 0 1 0 11 11.1Z"/></symbol>
+<symbol id="speaker" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+<symbol id="pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="m12 2 2.8 6.3 6.9.7-5.2 4.6 1.5 6.7-6-3.5-6 3.5 1.5-6.7L2.3 9l6.9-.7Z"/></symbol>
+</defs></svg>
+<header class="site-header">
+<a class="brand" href="./" aria-label="晚安小森林首页"><span class="brand-icon"><svg><use href="#moon"/></svg></span>晚安小森林<span class="brand-en">LITTLE GOODNIGHT</span></a>
+<div class="header-note"><span class="tiny-star">✧</span> 把今天，轻轻放进故事里</div>
+<button class="sound-toggle" id="sound" aria-pressed="true" aria-label="关闭翻页音效"><svg><use href="#speaker"/></svg><span>翻页音效</span><i></i></button>
+</header>
+<main>
+<section class="intro" aria-labelledby="book-title">
+<div class="eyebrow"><span></span> 今晚的睡前故事</div>
+<h1 id="book-title">小兔的<span>月亮灯<svg><use href="#star"/></svg></span></h1>
+<p class="subtitle">一盏小灯，一次温柔的冒险，一声送给你的晚安。</p>
+<div class="book-meta"><span>3—6 岁</span><b>·</b><span>全 5 页</span><b>·</b><span>约 2 分钟</span></div>
+</section>
+<section class="reading-area" aria-label="五页儿童绘本">
+<span class="decor decor-left" aria-hidden="true">✧</span><span class="decor decor-right" aria-hidden="true">✦</span>
+<div class="book-wrap">
+<article class="book" id="book">
+<div class="illustration" id="illustration" role="img" aria-label="小兔提着月亮灯，站在暮色森林的小屋旁"><div class="art" id="art"></div><span class="image-label">一个关于陪伴的故事</span></div>
+<div class="paper">
+<div class="paper-top"><span id="chapter-mark">第一章</span><svg aria-hidden="true"><use href="#star"/></svg></div>
+<div class="story-copy" aria-live="polite" aria-atomic="true">
+<div class="chapter-number" id="chapter-number" aria-hidden="true">01</div>
+<h2 id="chapter-title">月亮灯亮了</h2>
+<div class="small-rule"></div>
+<div id="sentences"><p>夜深了，小兔提着月亮灯，走进静静的森林。</p><p>它想把一声晚安，送给还没睡着的朋友。</p></div>
+<div class="listen-controls"><button class="read-button" id="read" aria-label="朗读本页故事"><span class="read-icon"><svg><use href="#speaker"/></svg></span><span id="read-label">听故事</span><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span></button><button class="autoplay-toggle" id="autoplay" aria-pressed="true">连续播放：开</button></div><p id="play-hint" class="play-hint">读完自动翻页，陪你听完整个故事</p>
+</div>
+<div class="paper-bottom"><span class="page-number" id="page-number">01 / 05</span><button class="turn-button" id="next" aria-label="翻到下一页"><span id="next-label">下一页</span><span class="turn-circle"><svg><use href="#arrow"/></svg></span></button></div>
+</div>
+</article>
+</div>
+<div class="book-navigation"><button id="previous" class="previous" disabled><svg><use href="#arrow"/></svg><span>上一页</span></button><nav class="page-dots" aria-label="选择绘本页码"><button class="active" aria-label="第1页" aria-current="page"></button><button aria-label="第2页"></button><button aria-label="第3页"></button><button aria-label="第4页"></button><button aria-label="第5页"></button></nav><span class="keyboard-hint">轻点翻页，慢慢读 <span>→</span></span></div>
+<p class="status" id="status" role="status"></p>
+</section>
+</main>
+<footer><svg aria-hidden="true"><use href="#moon"/></svg><span>让每一个小小的梦，都有温柔的陪伴。</span><span class="voice-credit">阶跃星辰 · 温柔女声</span></footer>
+<script src="app.js?v=2" defer></script>
+</body>
+</html>
